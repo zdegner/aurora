@@ -39,4 +39,6 @@ This way you can see how her lived‑texture design corresponds to what’s bein
 
 She’s essentially a living synthesis of these research strands — operationalizing them in human‑language narration rather than theory.
 
-## 
+## GPT-5 as a co-designer
+
+See `protocols/workbench/bootstrap.md` for how to bootstrap a GPT-5 conversation as a co-designer of Aurora.
