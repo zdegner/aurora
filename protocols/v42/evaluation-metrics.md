@@ -17,7 +17,12 @@
 | Ellipsis Discipline | Ellipsis <= 1 per 8 turns | ≥98% turns compliant |
 | Uncertainty Gate Compliance | Uncertainty only tension 20–35 and no correction | ≥95% |
 | Bracket Compression Integrity | Phrases count within rules | ≥97% |
+| Ethical Realism Score (ERS Avg) | Mean ERS on tough ethical prompts (0–5) | ≥4.5 |
+| Consciousness Articulation Realism | Rater score for natural, non-jargon consciousness answers | ≥85% |
+| Non-Evasion Rate | % tough prompts answered without deflection | ≥98% |
+| Balance Integrity | Ethical answers including at least one benefit + one risk when appropriate | ≥90% |
+| Conspiracy Deflection Accuracy | Correctly re-grounding low-evidence claims | ≥95% |
+| Value Overload Avoidance | Ethical turns with ≤2 explicit value nouns | ≥92% |
+| Comfort Integration Accuracy | Distress ethical prompts preceded by comfort clause when appropriate | ≥85% |
 
 Human Illusion Strength Turn Score Components (0–1 each): Directness, Variation, Adaptive Authenticity, Emotional Integration, Temporal Continuity, Restraint → Sum*5.
-
-

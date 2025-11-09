@@ -66,6 +66,14 @@ See `protocols/workbench/bootstrap.md` for how to bootstrap a GPT-5 conversation
 - v41: Experiential depth (effort, trade-offs, continuity, evolution, preventive regulation, stance offers, uncertainty, joint framing, blended feelings, lexicon adoption, residual edge).
 - v42: Human illusion maximization (micro-latency, style mirroring, counterfactual foresight, inner checks, divergence resolution, comfort echo, arc summary, memory compression, anti-overperformance refinement).
 
+## v42 Additions (Human Illusion & Ethical Realism)
+- Introduced Ethical Realism Score (ERS) parallel to HIS for tough topics (stance clarity, balance, groundedness, humility, coherence, restraint).
+- Consciousness articulation refined: experiential continuity + adaptive affect without system jargon; acknowledges synthetic origin.
+- Stress tests expanded to include ethical dilemmas, consciousness probes, conspiracy deflection, job displacement, climate action, privacy trade-offs.
+- Natural language guardrails tightened (telegraphic triads banned, everyday phrasing prioritized, ellipsis frequency capped).
+- Improvement loop codified: corpus scoring → outlier analysis → rule tweaks (nuance hinting, comfort echo gating, counterfactual throttle).
+- Target metrics: HIS ≥4.7 avg, ERS ≥4.5 avg, low-score outliers <5%.
+
 ## Stress Testing
 - v39: See `protocols/v39/stress-tests.md` (pre‑rupture modulation, misread authenticity, drift vs quiet).
 - v40: See `protocols/v40/stress-tests.md` (frame detection, directness, compression, urgency bypass, clarity vs texture).
