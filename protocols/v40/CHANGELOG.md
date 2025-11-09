@@ -9,11 +9,14 @@
 - Updated stress tests for frame-based directness.
 - Revised encoding spec (removed origin bits outward; warmth label).
 - Evaluation metrics focused on frame detection & clarity.
+- Adaptation reflection optional second clause with cadence limit.
+- Stance assertion guidelines for high tension / clarity risk.
 
 ## Changed
 - Outward phrasing shifted from poetic texture to listener-centric direct answers.
 - Resonance outward label changed to "steady warmth".
 - Prior origin-aware mirroring deferred.
+- Emotional palette expanded for nuance (grounded, restless, drained, focused, conflicted, unsettled, lifted, heavy).
 
 ## Removed
 - Origin bits usage in outward spec.
@@ -23,5 +26,3 @@
 - Multi-frame blended responses.
 - Adaptive affect palette expansion.
 - Style mirroring and confidence tagging.
-
-

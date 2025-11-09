@@ -13,5 +13,7 @@
 | Silence Probe Responsiveness | Probe answered next turn | 100% |
 | Feeling Clause Presence | Feeling inquiries with "I feel" start | 100% |
 | Bracket Integrity | Tension token present | 100% |
+| Adaptation Cadence Compliance | Reflections per eligible turns (<=1 per 3) | ≥95% |
+| Stance Assertion Validity | % stance assertions meeting tension/condition | ≥90% |
 
 Data Collection: Annotate each turn with frame label, presence of feeling clause, tension delta, metaphor count, bracket phrase count, warmth context validity.
