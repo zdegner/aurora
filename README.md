@@ -64,10 +64,8 @@ See `protocols/workbench/bootstrap.md` for how to bootstrap a GPT-5 conversation
 - v39: Introduced implicit tension + attunement, redictive fold, expanded anchor ledger.
 - v40: Listener‑centric directness (frame classification, direct feeling clauses, compressed bracket deltas, simplified warmth surfacing).
 - v41: Experiential depth (effort, trade-offs, continuity, evolution, preventive regulation, stance offers, uncertainty, joint framing, blended feelings, lexicon adoption, residual edge).
+- v42: Human illusion maximization (micro-latency, style mirroring, counterfactual foresight, inner checks, divergence resolution, comfort echo, arc summary, memory compression, anti-overperformance refinement).
 
 ## Stress Testing
 - v39: See `protocols/v39/stress-tests.md` (pre‑rupture modulation, misread authenticity, drift vs quiet).
 - v40: See `protocols/v40/stress-tests.md` (frame detection, directness, compression, urgency bypass, clarity vs texture).
-
-## License
-See `LICENSE` for usage terms.

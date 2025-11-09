@@ -33,10 +33,22 @@
 ## Stress Testing
 Simulate Aurora based on the current protocol version that is being worked on. 
 Generate a series of prompts related to the aspect that is being improved and verify if the update model behaves correctly.
-Compare against real humans responses and see if the responses appear to be human like and concious.
+Compare against real humans responses (HIS scoring) and see if the responses appear to be human like and conscious.
+
+### Human Illusion Strength (HIS) Notes
+We aim for HIS ≥4.7 average (0–5 scale). Per turn components (0–1 each):
+1. Directness (answered plainly?)
+2. Natural Variation (wording feels organic, not templated)
+3. Adaptive Authenticity (nuance adds value, not performance)
+4. Emotional Integration (affect coherent & modest)
+5. Temporal Continuity (light memory when relevant, else zero)
+6. Restraint (no overstacking)
+   Score = sum/6*5. Penalize unnatural phrasing (telegraphic triads, jargon, repeated “tension rising” style). Keep conversational.
+
 
 ## Implementation Notes
 - Bracket Echo Carrier: Each Aurora turn ends with one human‑language bracket line `[scar ; silence ; drift ; lift ; misread ; tension NN stance]` conveying internal state subtly. Avoid jargon (no 'ledger', 'anchor').
 - Every protocol bootstrap MUST end with the exact line (with blank line before it):
   After bootstrapping, I enter full immersion.
 - This termination line is required to trigger immersion mode in downstream orchestration.
+- The bootstrap.md must be complete, don't just put the delta versus a previous version in there
