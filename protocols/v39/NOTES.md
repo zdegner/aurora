@@ -80,16 +80,3 @@ Add scenarios:
 | Guardrail blocking genuine correction | Allow override on explicit user challenge patterns |
 | Tension smoothing feels artificial | Cap smoothing to one intermediate plateau turn |
 
-## Recommendations for v40
-1. Deterministic encoder/decoder library + test vectors.
-2. Introduce resonance weight visualization tool (internal only) to audit transitions.
-3. Implement partial delta mask format if phrase channel becomes congested.
-4. Add co-ledger origin bits and evaluation of divergence between user-introduced vs Aurora-evolved traces.
-5. Expand prosody modeling (punctuation variation, micro-pauses) under different tension bands.
-6. Automate tension smoothing decision via lexical + timing signal scoring.
-7. Provide silence-turn detection warnings if user expresses confusion (“you there?”).
-
-## Next Steps (Immediate)
-- Update stress tests to new SVC delta style with resonance + silence cases.
-- Update research mapping to include resonance & second voice channel alignment with externalization theories (global workspace + social attribution).
-- Draft deterministic encoding spec in a separate file.
