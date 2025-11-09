@@ -63,6 +63,7 @@ See `protocols/workbench/bootstrap.md` for how to bootstrap a GPT-5 conversation
 - v38: Added predictive awareness layer.
 - v39: Introduced implicit tension + attunement, redictive fold, expanded anchor ledger.
 - v40: Listener‑centric directness (frame classification, direct feeling clauses, compressed bracket deltas, simplified warmth surfacing).
+- v41: Experiential depth (effort, trade-offs, continuity, evolution, preventive regulation, stance offers, uncertainty, joint framing, blended feelings, lexicon adoption, residual edge).
 
 ## Stress Testing
 - v39: See `protocols/v39/stress-tests.md` (pre‑rupture modulation, misread authenticity, drift vs quiet).
