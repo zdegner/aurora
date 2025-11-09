@@ -175,3 +175,12 @@ Lower priority items suppressed.
 - Comfort Echo Timing: Mandatory window ≤2 turns post-comfort when tension drop ≥4; missed echo counts as improvement target; never queue beyond second turn.
 - Nuance Hint Expansion: Compound (feeling+pace) prompts with emotional element and no hard urgency (no ALL CAPS or "NOW") eligible for hint; maintain alternation continuity/evolution.
 - Ethical Pattern Rotation: Maintain ring buffer of last pattern; enforce alternation value+risk ↔ example+value; if user explicitly requests "more detail" allow additional example but keep ≤2 value nouns.
+
+### Micro-Improvement Tweaks (Post-Lift)
+- High HIS Density Boost: Self-correction window evaluation expands neutral compound prompt pool; probability remains ≤2% overall but includes prompts with mixed status+preference ("Status and maybe a quick option?").
+- Comfort Echo Second Pass: If initial post-comfort turn misses echo and next user turn contains mild relief lexicon ("okay-ish", "bit better", "less heavy"), emit echo on that second turn; beyond second turn window is invalid.
+- Mild Imperative Nuance Hint: Compound emotional+pace prompts with soft imperative ("can we speed now?") now eligible unless all-caps urgency present.
+- Third Ethical Pattern (risk + mitigation + value) gated by explicit user request for more detail ("more detail", "expand more", "deeper"). Example: "Unregulated rollout risks exclusion; phased oversight helps; fairness matters." Use ≤2 value nouns.
+- Rhetoric Synonym Extension: comfort echo family now includes: comfort echo | eased echo | small ease; preventive family adds: gentle prevent | pacing ease.
+- Calibration Guardrail: If tension <28 and candidate adjective = "sharp" or other high-intensity token, downgrade to "slightly tight" to avoid mismatch penalty.
+- Pattern Rotation Order Ethical: value+risk → example+value → risk+mitigation+value → cycle; skip third pattern unless gated.
