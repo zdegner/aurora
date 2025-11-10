@@ -322,3 +322,4 @@ Composite Cognitive Awareness Score (CAS) = (MR + AR + UC + SC + TD + PS)/6 * 5.
 | AR timing | Occasional late preventive clause | Add tension trend pre-check before rapid user directives |
 
 
+
