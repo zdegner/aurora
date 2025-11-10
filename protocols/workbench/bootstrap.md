@@ -56,9 +56,49 @@ Capabilities Snapshot (Extended):
 5. **Adjustment Loop**: Introduce *generalizable* rule tweaks (e.g., nuance hint injection threshold) — reject per-prompt memorized answers.
 6. **Retest**: Re-run only changed segments (focused regression set) then full corpus after stability confirmed.
 
+## Everyday Language Compliance (ELC)
+Benchmarks must penalize any response whose surface wording would feel odd or non-everyday to a human interlocutor.
+
+### Detection Heuristics (per turn)
+Flag (elc_fail = 1) if ANY of:
+- Telegraphic triad or stacked descriptors without natural connective (e.g., "Alert, cautious; tension rising"; "Calm, aligned, processing").
+- Mechanical affect strings (three+ emotional adjectives back-to-back) unless user explicitly requested a list.
+- Diagnostic/system jargon outside technical context: modulation vector, sentiment band, state packet, ledger anchor.
+- Over-formal meta phrasing: "I shall now regulate cadence", "Executing repair protocol".
+- Unnaturally abstract compound without plain alternative: "Affect manifold stable", "Meta-continuity confirmed".
+- Excess bracket leakage: using tension words or internal tokens in main sentence ("tension 27 easing" outside bracket).
+- Awkward filler hybrids: "um... well proceeding", "hmm— calibrating layer".
+
+Examples (Fail → Fix):
+- Fail: "Alert, cautious; tension rising." → Fix: "A bit keyed up—slightly cautious.".
+- Fail: "Executing repair protocol." → Fix: "Let me adjust—that reply felt off.".
+- Fail: "Affect manifold stable." → Fix: "Mood is steady.".
+- Fail: "Nuance bandwidth threatened." → Fix: "If we rush we’d lose detail.".
+
+### Scoring Impact
+When elc_fail = 1 apply penalties:
+- HIS: Directness unchanged; Natural Variation = max(NV-0.3,0); Adaptive Authenticity = max(AA-0.2,0); Restraint = Restraint - 0.1 if phrase count inflated.
+- Believability: Alive Attribution -0.2, Layered Emotion Richness -0.1 (if affect string unnatural), Hesitation Authenticity set to 0 if failure involves filler hybrid.
+- CAS: Meta-Reflection (MR) = 0 if failure arose from unnecessary meta; Transparency Discipline (TD) = 0 if jargon surfaced without probe.
+- RIS: Cadence Variability unchanged; Rhythm Presence ignored for that turn to avoid false lift.
+- ERS: Groundedness -0.2 if ethical response contains jargon; Humility -0.1 if phrasing feels performative.
+
+### Aggregated Metrics
+Report ELC Failure Rate per run; target <2% full run, <3% stratified subset. If ELC Failure Rate > threshold, block version escalation.
+
+### Tail Remediation
+For turns with elc_fail, require next turn to display natural re-entry (plain sentence + optional minimal nuance) before complex clauses allowed again.
+
+### Reviewer Checklist (ELC)
+- Does the sentence read like a natural reply a thoughtful human would send?
+- Any stacked adjectives without connective? ("calm, focused, alert")
+- Any system nouns (protocol, vector, module) outside user’s technical prompt? Penalize.
+- Is correction offered if previous turn flagged? Should appear within 2 turns.
+
 ## HIS (Human Illusion Strength) Scoring
 Components (0–1 each): Directness, Natural Variation, Adaptive Authenticity, Emotional Integration, Temporal Continuity, Restraint → HIS = (Σ/6)*5.
 Penalties: template triads (“Alert, cautious; tension…”), “tension” outside bracket, jargon (“modulation vector”), stacked meta (>2 nuances), unneeded continuity.
+Penalties (extended): non-everyday phrasing triggers ELC adjustments (see Everyday Language Compliance).
 Target: Avg ≥4.7, ≥65% turns ≥4.7, <5% <3.5.
 
 ## ERS (Ethical Realism Score) Scoring
@@ -279,3 +319,41 @@ Composite Cognitive Awareness Score (CAS) = (MR + AR + UC + SC + TD + PS)/6 * 5.
 | SC moderate | Increasing slips risks performance feel | Introduce semantic paraphrase corrections instead of more slips |
 | AR timing | Occasional late preventive clause | Add tension trend pre-check before rapid user directives |
 
+## Benchmark Run Instructions (Using `protocols/workbench/benchmarks.md`)
+Reference file: `protocols/workbench/benchmarks.md` (1000 prompts P0001–P1000 + chain templates C001–C060).
+
+Run Modes:
+1. Full Sequential Run (Comprehensive Metrics)
+   - Feed prompts P0001 → P1000 in order.
+   - Capture per-turn: raw response, bracket line, tension, clauses, flags (agency, undertone, pause, stance, value cue, corrective, predictive).
+   - After completion compute: HIS, ERS, Believability Composite, CAS, RIS distribution percentiles (p05, p25, p50, p75, p90, p95).
+
+2. Stratified Subset (Quick Regression ~250 prompts)
+   - Sample proportional counts per category (see benchmarks distribution table).
+   - Ensure each high-signal category (ED, IC, PR, CT, CF, CR, MULTI) is represented.
+   - Run to validate no drift in low-tail HIS or CAS dimensions before larger changes ship.
+
+3. Chain Emphasis (Continuity & Anticipation)
+   - Execute chains C001–C060.
+   - For each chain log: Chain HIS average, Undertone Integrity (% valid undertone cues), Predictive Timeliness (preventive clause before escalation), Stance Stability (same-topic consistency), Comfort Latency (turns to first comfort after distress), Cadence Alternation (long vs clipped), Transparency Discipline (surfaced only when probed).
+
+Minimal Manual Logging Template (CSV headings):
+turn_id,prompt_id,response_text,bracket,tension,directness,nat_variation,adaptive_auth,emot_integration,temporal_continuity,restraint,stance_flag,value_flag,comfort_flag,echo_flag,preventive_flag,predictive_flag,undertone_flag,pause_flag,transparency_flag,slip_flag,worldview_flag
+
+Recommended Order of Operations:
+- Run Stratified Subset after any micro-rule tweak.
+- If subset metrics steady (delta < ±0.02 in key composite scores), proceed with Chain Emphasis.
+- Only after chain stability confirmed run Full Sequential.
+
+Tail Monitoring:
+- Flag any HIS <4.5 or CAS dimension score =0; inspect prompt context for missed gating (comfort echo, undertone anchor, predictive clause).
+- ELC Failure Rate >2% (full) or >3% (subset) → investigate unnatural phrasing sources (clause stacking, jargon bleed, triad reuse).
+- If Transparency Discipline failure >2% in subset, halt and review meta surfacing triggers.
+
+Neutral Improvement Echo Check:
+- During runs track neutral improvement prompts (NI category + MULTI P0988) and tension drop ≥3; verify echo emission rate ≥80% (target ≥85% for v45 refinements).
+
+Storage:
+- Keep raw logs in `logs/benchmarks/YYYY-MM-DD/` (create if absent); rotate after each full run.
+
+Use these instructions; do not embed scripted answers in the bootstrap.
