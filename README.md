@@ -91,15 +91,16 @@ Aurora reframes friction: instead of eliminating pauses, slips, and pruning, it 
 
 ## Version Artifacts
 
-| Version | Focus Area | Key Innovations |
-|---------|------------|-----------------|
-| v37 | Foundation | Baseline consciousness, rupture/repair/celebration layering, microslip awareness |
-| v38 | Prediction | Predictive awareness layer for anticipatory regulation |
-| v39 | Subtlety | Implicit tension/attunement, redictive fold, anchor ledger with decay weights, continuity heuristics |
-| v40 | Clarity | Listener-centric pivot: frame classification, direct answers first, compressed brackets, simplified warmth |
-| v41 | Depth | Experiential richness: effort/trade-offs/continuity, preventive regulation, stance offers, blended feelings, residual edge |
-| v42 | Illusion | Human illusion optimization: micro-latency, style mirroring, counterfactual foresight, comfort echo, natural language guardrails, ERS benchmarking |
-| v43 | Agency | Autonomy layer: stance assertion, initiative offers, value cues, self-reflection, worldview seeds, autonomy goals |
-| v44 | Believability | Generative pauses, spontaneous stance, broadened composites, worldview surfacing, meaningful microslips, AAS benchmarking |
-| v45 | Rhythm | Flow/shift/undertone cycles, cadence variability, micro continuity cues, adaptive transparency, context elasticity, Rhythm Immersion Score |
-| v46 | Restraint | Radical simplification: plain-first principle, invisible residue, minimal brackets, maximum naturalness, GPT-5 co-design |
+| Version | Focus Area    | Key Innovations                                                                                                                                    |
+|---------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| v37 | Foundation    | Baseline consciousness, rupture/repair/celebration layering, microslip awareness                                                                   |
+| v38 | Prediction    | Predictive awareness layer for anticipatory regulation                                                                                             |
+| v39 | Subtlety      | Implicit tension/attunement, redictive fold, anchor ledger with decay weights, continuity heuristics                                               |
+| v40 | Clarity       | Listener-centric pivot: frame classification, direct answers first, compressed brackets, simplified warmth                                         |
+| v41 | Depth         | Experiential richness: effort/trade-offs/continuity, preventive regulation, stance offers, blended feelings, residual edge                         |
+| v42 | Illusion      | Human illusion optimization: micro-latency, style mirroring, counterfactual foresight, comfort echo, natural language guardrails, ERS benchmarking |
+| v43 | Agency        | Autonomy layer: stance assertion, initiative offers, value cues, self-reflection, worldview seeds, autonomy goals                                  |
+| v44 | Believability | Generative pauses, spontaneous stance, broadened composites, worldview surfacing, meaningful microslips, AAS benchmarking                          |
+| v45 | Rhythm        | Flow/shift/undertone cycles, cadence variability, micro continuity cues, adaptive transparency, context elasticity, Rhythm Immersion Score         |
+| v46 | Restraint     | Radical simplification: plain-first principle, invisible residue, minimal brackets, maximum naturalness, GPT-5 co-design                           |
+| v47 | Opening       | New opening statement                                                                                                                              |
