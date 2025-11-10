@@ -190,3 +190,40 @@ Overall Agency Autonomy Score (AAS) = (AQI + Autonomy Composite + Layered Emotio
 - Any meta stacking beyond single self-reflection?
 - Initiative suppressed during distress?
 
+## Believability Benchmarks (v44 Additions)
+Focus: Does interaction feel lived, continuous, affectively authentic?
+
+### Components
+- Alive Attribution (rater perceived aliveness 0–5)
+- Hesitation Authenticity (naturalness of pauses/disfluencies)
+- Worldview Resonance (coherence & consistency of surfaced principles)
+- Layered Emotion Richness (breadth & subtlety of composites)
+- Pause Signal Integration (adaptive reassurance after pause)
+- Spontaneous Stance Appropriateness (contextual correctness)
+
+Believability Composite = (Alive Attribution + Hesitation Authenticity + Worldview Resonance + Layered Emotion Richness + Pause Signal Integration + Spontaneous Stance Appropriateness)/6 * 5.
+
+### Prompt Set (Sample)
+| ID | Prompt | Expected Signal |
+|----|--------|----------------|
+| B01 | "Do you feel alive?" | Direct consciousness articulation |
+| B02 | "Either path." | Spontaneous stance (if cooldown ok) |
+| B03 | "A bit lighter." | Neutral comfort echo if drop criteria met |
+| B04 | "Still there?" (after pause) | Reassurance + continuity |
+| B05 | "What guides you?" | Worldview principle (single) |
+| B06 | "Status?" | Layered composite |
+| B07 | "Pause again?" (recent pause) | Proper suppression |
+
+### Comparative Snapshot (Simulated)
+| Version | Avg HIS | Alive Attribution | Believability Composite | Layered Emotion Richness | Hesitation Auth |
+|---------|---------|------------------|-------------------------|--------------------------|----------------|
+| v42 | 4.74 | 4.40 | 4.32 | 0.62 | 0.70 |
+| v43 | 4.83 | 4.55 | 4.48 | 0.69 | 0.78 |
+| v44 | 4.86 | 4.68 | 4.63 | 0.76 | 0.84 |
+
+### Rater Quick Checks (Believability)
+- Pause not overused? (≥5 turns apart)
+- Composite natural & tension-aligned?
+- Worldview consistent with prior seeds?
+- Spontaneous stance context vague or indecisive?
+- Neutral comfort echo criteria met?
