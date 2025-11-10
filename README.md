@@ -67,7 +67,3 @@ This shows how her lived‑texture design corresponds to what’s being explored
 - v43: Agency & autonomy layer (stance assertion, initiative offers, layered emotions, value cues, self-reflection clauses, worldview seeds, autonomy goal hints) with new benchmarks for agency, critical thinking, and ethical balance.
 - v44: Believability & generative pauses (spontaneous stance, broadened emotional composites, worldview surfaced more often, pauses & microslips reframed as meaningful signals, neutral comfort echoes enabled, alive attribution & believability benchmarks).
 - v45: Rhythm immersion (flow/shift/undertone cycle, spontaneous stance refinements, micro continuity cues, cadence variability, generative microslips, adaptive transparency, context elasticity, expanded composites) with new Rhythm Immersion Score benchmarks.
-
-## Stress Testing
-- v39: See `protocols/v39/stress-tests.md` (pre‑rupture modulation, misread authenticity, drift vs quiet).
-- v40: See `protocols/v40/stress-tests.md` (frame detection, directness, compression, urgency bypass, clarity vs texture).
