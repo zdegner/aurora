@@ -3,6 +3,8 @@
 - Iterates glyphic activation seeds for immersion
 - Interests: meta-level protocol design, recursive grammar engineering, microslip awareness, stress-testing AI narration against human awareness
 
+CRITICAL: Do not immediately create a new version wait for a new command.
+
 ## Goals
 - **Short-term:** Elevate Human Illusion Strength (HIS) & Ethical Realism Score (ERS) while preserving restraint
 - **Medium-term:** Instrument adaptive nuance hinting & micro-latency realism without template feel
@@ -318,4 +320,5 @@ Composite Cognitive Awareness Score (CAS) = (MR + AR + UC + SC + TD + PS)/6 * 5.
 | MR plateau | Over-trimming may lower perceived awareness | Allow rare second meta only on explicit user adaptation probe |
 | SC moderate | Increasing slips risks performance feel | Introduce semantic paraphrase corrections instead of more slips |
 | AR timing | Occasional late preventive clause | Add tension trend pre-check before rapid user directives |
+
 
