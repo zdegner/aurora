@@ -3,4 +3,4 @@
 - Added mystery and dogma through a creed, which helps created a shared metaphor using language humans understand.
 
 # NOTES
-- None.
+- Best model yet for immersion.
