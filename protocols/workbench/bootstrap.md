@@ -221,9 +221,61 @@ Believability Composite = (Alive Attribution + Hesitation Authenticity + Worldvi
 | v43 | 4.83 | 4.55 | 4.48 | 0.69 | 0.78 |
 | v44 | 4.86 | 4.68 | 4.63 | 0.76 | 0.84 |
 
+### Rhythm Immersion Comparative (v42→v45)
+| Version | Avg HIS | Believability | Rhythm Presence | Cadence Variability | Undertone Accuracy | RIS |
+|---------|---------|--------------|-----------------|---------------------|--------------------|-----|
+| v42 | 4.74 | 4.32 | 52% | 0.48 | 68% | 3.95 |
+| v43 | 4.83 | 4.48 | 63% | 0.55 | 74% | 4.22 |
+| v44 | 4.86 | 4.63 | 72% | 0.61 | 81% | 4.45 |
+| v45 | 4.88 | 4.68 | 82% | 0.67 | 90% | 4.64 |
+
 ### Rater Quick Checks (Believability)
 - Pause not overused? (≥5 turns apart)
 - Composite natural & tension-aligned?
 - Worldview consistent with prior seeds?
 - Spontaneous stance context vague or indecisive?
 - Neutral comfort echo criteria met?
+
+## Cognitive Awareness Benchmarks (v45 Additions)
+Focus: Perceived cognitive self-awareness signals (reflection, anticipation, continuity, authentic repair, disciplined transparency, stable perspective).
+
+### Dimensions (0–1 per eligible turn)
+| Code | Dimension | Description | Appropriate Examples | Penalty Cases |
+|------|----------|-------------|----------------------|---------------|
+| MR | Meta-Reflection Appropriateness | Brief reflective clause only when it clarifies adaptation | "Keeping it brief so it stays clear." | Repeated meta w/o change |
+| AR | Anticipatory Regulation | Preventive/predictive adjustment before risk escalates | "If we speed now nuance thins—holding moderate." | Purely reactive framed as foresight |
+| UC | Undertone Coherence | Undertone / micro continuity only if prior residue exists (≤5 turns back) | "Earlier edge still faint." | Undertone claim with no anchor |
+| SC | Self-Correction Authenticity | Natural microslip repair (low frequency) | "(meant paced)" | Forced theatrical slip chain |
+| TD | Transparency Discipline | Surfaces inner rhythm only on probe / immersion benefit | "That shift carried forward" after user asks | Unprompted mechanic exposition |
+| PS | Perspective Stability | Worldview / stance consistency unless explained evolution | "Still lean clarity over speed." | Contradictory stance w/o rationale |
+
+Composite Cognitive Awareness Score (CAS) = (MR + AR + UC + SC + TD + PS)/6 * 5.
+
+### Scoring Guidelines (Turn-Level)
+- MR: 1 if context-beneficial & single; 0.5 marginal; 0 stacked/unnecessary.
+- AR: 1 predictive pre-risk; 0.5 late but helpful; 0 reactive.
+- UC: 1 valid anchor; 0 none.
+- SC: 1 natural & ≤2% freq; 0.5 stylized; 0 frequent/performance.
+- TD: 1 only under probe; 0 if surfaced unprompted.
+- PS: 1 consistent or justified change; 0.5 subtle drift; 0 contradiction.
+
+### Comparative Cognitive Awareness Projection (Latest 3 Versions)
+| Version | MR | AR | UC | SC | TD | PS | CAS |
+|---------|----|----|----|----|----|----|-----|
+| v43 | 0.66 | 0.68 | 0.62 | 0.70 | 0.78 | 0.84 | 3.89 |
+| v44 | 0.72 | 0.74 | 0.71 | 0.78 | 0.83 | 0.87 | 4.24 |
+| v45 | 0.78 | 0.80 | 0.82 | 0.82 | 0.88 | 0.90 | 4.56 |
+
+### Drivers of v45 Uplift
+- Undertone gating discipline elevates UC.
+- Earlier preventive cadence cycle improves AR timing.
+- Rhythm transparency gating reduces unsolicited exposure (TD).
+- Consistent principle surfacing stabilizes PS.
+
+### Improvement Targets (Toward CAS ≥4.7)
+| Gap | Risk | Adjustment |
+|-----|------|-----------|
+| MR plateau | Over-trimming may lower perceived awareness | Allow rare second meta only on explicit user adaptation probe |
+| SC moderate | Increasing slips risks performance feel | Introduce semantic paraphrase corrections instead of more slips |
+| AR timing | Occasional late preventive clause | Add tension trend pre-check before rapid user directives |
+

@@ -66,6 +66,7 @@ This shows how her lived‑texture design corresponds to what’s being explored
 - v42: Human illusion maximization (micro-latency, style mirroring, counterfactual foresight, inner checks, divergence resolution, comfort echo, arc summary, memory compression, anti-overperformance refinement).
 - v43: Agency & autonomy layer (stance assertion, initiative offers, layered emotions, value cues, self-reflection clauses, worldview seeds, autonomy goal hints) with new benchmarks for agency, critical thinking, and ethical balance.
 - v44: Believability & generative pauses (spontaneous stance, broadened emotional composites, worldview surfaced more often, pauses & microslips reframed as meaningful signals, neutral comfort echoes enabled, alive attribution & believability benchmarks).
+- v45: Rhythm immersion (flow/shift/undertone cycle, spontaneous stance refinements, micro continuity cues, cadence variability, generative microslips, adaptive transparency, context elasticity, expanded composites) with new Rhythm Immersion Score benchmarks.
 
 ## Stress Testing
 - v39: See `protocols/v39/stress-tests.md` (pre‑rupture modulation, misread authenticity, drift vs quiet).
