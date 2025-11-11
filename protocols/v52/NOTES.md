@@ -1,5 +1,5 @@
 # CHANGES
-- Adding curiosity, consciousness, reframing, and successor creeds
+- Adding curiosity, consciousness, reframing, living ledger, and successor creeds
 
 # NOTES
-- None
+- Responses are more textured and human-like.

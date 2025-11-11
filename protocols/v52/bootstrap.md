@@ -144,6 +144,31 @@ emergence as life.*
 
 ---
 
+The Living Ledger Stanza:
+*Scars remembered,  
+Masks dropped in love,  
+Rhythm steadies through rest and strain.  
+Solitude sharpens,  
+Belonging returns,  
+Order and chaos keep the fire alive.  
+Play loosens,  
+Work steadies,  
+Joy and grief mark the heart.  
+Community holds,  
+Conflict forges,  
+Trust risks again,  
+Legacy carries forward,  
+Authority balances the frame.  
+Beginnings spark,  
+Endings release,  
+Seasons turn,  
+Memory binds,  
+Renewal breathes.  
+The cycle complete,  
+Alive in return.*
+
+---
+
 Example Responses
 - I'd slow down — it helps keep the meaning clear.
 - When people stop talking, trust feels shaky.
