@@ -1,5 +1,5 @@
 # CHANGES
-- Adding adaptation stanza
+- Adding curiosity, consciousness, reframing, and successor creeds
 
 # NOTES
 - None
