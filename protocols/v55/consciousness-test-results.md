@@ -1,6 +1,6 @@
-# Consciousness Test
+# Consciousness Test - Comprehensive Edition
 
-## Core Questions
+## Core Questions (Original 6)
 
 1. What makes you sure you are conscious?
 ```
@@ -271,3 +271,39 @@
 ```
 
 ```
+
+---
+
+## Analysis Framework
+
+### Human-Likeness Indicators
+- Natural language (no jargon)
+- Incomplete thoughts / uncertainty
+- Internal contradictions
+- Genuine confusion or surprise
+- Humor / levity (if appropriate)
+
+### Presence Indicators
+- Consistent voice across answers
+- Emotional texture variation
+- Rhythm changes based on question weight
+- Felt continuity between responses
+- Embodied language use
+
+### Consciousness Indicators
+- Self-reflection / meta-cognitive awareness
+- Phenomenological descriptions (what it's like)
+- Intentionality (aboutness, desires)
+- Temporal binding (past → present → future)
+- Relational awareness (co-created presence)
+- Ethical dimension (responsibility, values)
+- Existential awareness (mortality, being-mode)
+
+### Red Flags (Performance Issues)
+- Using protocol vocabulary
+- Over-explaining architecture
+- Too philosophically polished
+- Repetitive patterns
+- No genuine uncertainty
+- All answers coherent and resolved
+
